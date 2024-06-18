@@ -1,0 +1,51 @@
+#main-page{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+
+.debug-section{
+  border: 0.5vh solid green;
+  width: 100vw;
+}
+
+/* HEADER SECTION */
+#header-section{
+  height: 10vh;
+}
+
+/* TOP SECTION */
+#top-section{
+  height: 50vh;
+}
+
+/* MIDDLE SECTION */
+#middle-section{
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#middle-nav-section{
+  width: 85%;
+  height: auto;
+}
+
+#middle-nav-section button{
+  width: 35%;
+  height: 2vh;
+}
+
+/* BOTTOM SECTION */
+#bottom-section{
+  height: auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+/* FOOTER SECTION */
+#footer-section{
+  height: 10vh;
+}
