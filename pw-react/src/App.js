@@ -1,10 +1,28 @@
 import './css/App.css';
+import getNavBttnStyle from './js/projectsPage';
+
+/* ICONS FILLED*/
 import instagramFilled from './img/filled/icons8-instagram.png';
 import redditFilled from './img/filled/icons8-reddit.png';
 import twitterFilled from './img/filled/icons8-twitter.png';
+import modsFilled from './img/filled/icons8-tools.png';
+import projectFilled from './img/filled/icons8-drawing.png';
+import galleryFilled from './img/filled/icons8-gallery.png';
+
+/* ICONS UNFILLED */
 import dwnArrowUnfilled from './img/unfilled/icons8-arrow.png';
-import tbProfile from './img/other/tb_profile.jpeg';
+import modsUnfilled from './img/unfilled/icons8-tools.png';
+import projectUnfilled from './img/unfilled/icons8-drawing.png';
+import galleryUnfilled from './img/unfilled/icons8-gallery.png';
+import instagramUnfilled from './img/unfilled/icons8-instagram.png';
+import redditUnfilled from './img/unfilled/icons8-reddit.png';
+import twitterUnfilled from './img/unfilled/icons8-twitter.png';
+
+/* GALLERY */
 import terminus from './img/gallery/Terminus.png';
+
+/* OTHER */
+import tbProfile from './img/other/tb_profile.jpeg';
 
 function App() {
   return (
@@ -26,26 +44,49 @@ function App() {
       </div>
       <div id='middle-section' className='debug-section'>
         <div className='middle-nav-section'>
-          <button>Mods</button>
-          <button>3D Projects</button>
-          <button>Gallery</button>
+          <button className='middle-nav-bttns' onClick={getNavBttnStyle(0)}>
+            <img src={modsUnfilled} alt='Mods' className='middle-nav-imgs'></img>Mods
+          </button>
+          <button className='middle-nav-bttns' onClick={getNavBttnStyle(1)}>
+            <img src={projectUnfilled} alt='Projects' className='middle-nav-imgs'></img>3D Projects
+          </button>
+          <button className='middle-nav-bttns' onClick={getNavBttnStyle(2)}>
+            <img src={galleryUnfilled} alt='gallery' className='middle-nav-imgs'></img>Gallery
+          </button>
         </div>
       </div>
       <div id='bottom-section' className='debug-section'>
         <div className='bottom-info-block'>
           <div className='bottom-info-card'>
-            <span>
+            <div>
               This section showcases 3D projects created during my free
-              time that are just for posting on social media
-            </span>
+              time that are just for posting on social media.
+            </div>
           </div>
         </div>
       </div>
       <div id='footer-section' className='debug-section'>
-        <div>
-          <img src={instagramFilled} alt='instagram-filled'></img>
-          <img src={redditFilled} alt='reddit-filled'></img>
-          <img src={twitterFilled} alt='twitter-filled'></img>
+        <div id='footer-icons-filled'>
+          <a href='https://www.instagram.com/trolledbartholomew/' target='_blank' rel='noreferrer'>
+            <img src={instagramFilled} alt='instagram-filled'></img>
+          </a>
+          <a href='https://www.reddit.com/user/TrolledBartholomew/' target='_blank' rel='noreferrer'>
+            <img src={redditFilled} alt='reddit-filled'></img>
+          </a>
+          <a href='https://x.com/TrolledBartholo' target='_blank' rel='noreferrer'>
+            <img src={twitterFilled} alt='twitter-filled'></img>
+          </a>
+        </div>
+        <div id='footer-icons-unfilled'>
+          <a href='https://www.instagram.com/trolledbartholomew/' target='_blank' rel='noreferrer'>
+            <img src={instagramUnfilled} alt='instagram-unfilled'></img>
+          </a>
+          <a href='https://www.reddit.com/user/TrolledBartholomew/' target='_blank' rel='noreferrer'>
+            <img src={redditUnfilled} alt='reddit-unfilled'></img>
+          </a>
+          <a href='https://x.com/TrolledBartholo' target='_blank' rel='noreferrer'>
+            <img src={twitterUnfilled} alt='twitter-unfilled'></img>
+          </a>
         </div>
       </div>
     </div>
