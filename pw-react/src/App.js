@@ -5,6 +5,9 @@ import getNavBttnStyle from './js/projectsPage';
 import instagramFilled from './img/filled/icons8-instagram.png';
 import redditFilled from './img/filled/icons8-reddit.png';
 import twitterFilled from './img/filled/icons8-twitter.png';
+import modsFilled from './img/filled/icons8-tools.png';
+import projectFilled from './img/filled/icons8-drawing.png';
+import galleryFilled from './img/filled/icons8-gallery.png';
 
 
 /* ICONS UNFILLED */
@@ -21,6 +24,8 @@ import terminus from './img/gallery/Terminus.png';
 
 /* OTHER */
 import tbProfile from './img/other/tb_profile.jpeg';
+
+let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
 
 function App() {
   return (
@@ -43,17 +48,17 @@ function App() {
       <div id='middle-section' className='debug-section'>
         <div className='middle-nav-section'>
           <button className='middle-nav-bttns' onClick={
-            () => getNavBttnStyle(0)
+            () => getNavBttnStyle(0, modsFilled, navImgArr)
           }>
             <img src={modsUnfilled} alt='Mods' className='middle-nav-imgs'></img>Mods
           </button>
           <button className='middle-nav-bttns' onClick={
-            () => getNavBttnStyle(1)
+            () => getNavBttnStyle(1, projectFilled, navImgArr)
           }>
             <img src={projectUnfilled} alt='Projects' className='middle-nav-imgs'></img>3D Projects
           </button>
           <button className='middle-nav-bttns' onClick={
-            () => getNavBttnStyle(2)
+            () => getNavBttnStyle(2, galleryFilled, navImgArr)
           }>
             <img src={galleryUnfilled} alt='gallery' className='middle-nav-imgs'></img>Gallery
           </button>
