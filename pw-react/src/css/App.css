@@ -67,6 +67,7 @@ button:hover{
   margin-right: 0.5vw;
   border-radius: 5vh;
   border: 0.2vh solid #010109;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5px 2px;
 }
 
 #header-skills-section{
@@ -116,7 +117,10 @@ button:hover{
   width: 100vw;
   height: auto;
   padding: 2vh;
+  position: relative;
+  z-index: 2;
 }
+
 
 .middle-nav-section img{
   width: 1.5vw;
@@ -133,13 +137,13 @@ button:hover{
   border-radius: 1vh;
   margin-left: -0.4vw;
   margin-right: -0.4vw;
-  background-color: transparent;
+  background-color: #FDFFFF;
   font-size: 2.75vh;
   font-family: source-sans-pro-light;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
 }
 
 /* BOTTOM SECTION */
