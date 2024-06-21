@@ -18,12 +18,17 @@ import galleryUnfilled from './img/unfilled/icons8-gallery.png';
 import instagramUnfilled from './img/unfilled/icons8-instagram.png';
 import redditUnfilled from './img/unfilled/icons8-reddit.png';
 import twitterUnfilled from './img/unfilled/icons8-twitter.png';
+import blenderUnfilled from './img/unfilled/icons8-blender-100.png';
+import photoshopUnfileed from './img/unfilled/icons8-photoshop-100.png';
+import vsUnfilled from './img/unfilled/icons8-visual-studio-100.png';
+import premiereproUnfilled from './img/unfilled/icons8-adobe-premiere-pro-100.png';
 
 /* GALLERY */
 import terminus from './img/gallery/Terminus.png';
 
 /* OTHER */
 import tbProfile from './img/other/tb_profile.jpeg';
+import theatreMasks from './img/other/theatre masks.png';
 
 let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
 
@@ -71,6 +76,22 @@ function App() {
               This section showcases 3D projects created during my free
               time that are just for posting on social media.
             </div>
+          </div>
+        </div>
+        <div className='bottom-project-card'>
+          <div className='project-card-name'>PROJECT NAME</div>
+          <div className='project-card-software'>
+            <img src={blenderUnfilled} alt='Blender'></img>
+            <img src={photoshopUnfileed} alt='Photoshop'></img>
+            <img src={vsUnfilled} alt='Visual studio code'></img>
+            <img src={premiereproUnfilled} alt='Premiere pro'></img>
+          </div>
+          <div className='project-card-info'>INFO HERE</div>
+          <div className='project-card-img'>
+            <img src={theatreMasks} alt='preview'></img>
+          </div>
+          <div className='project-card-bttn'>
+            <button>Learn More</button>
           </div>
         </div>
       </div>
