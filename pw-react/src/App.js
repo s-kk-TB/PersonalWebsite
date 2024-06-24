@@ -25,6 +25,8 @@ import premiereproUnfilled from './img/unfilled/icons8-adobe-premiere-pro-100.pn
 
 /* GALLERY */
 import terminus from './img/gallery/Terminus.png';
+import arcana from './img/gallery/arcana.png';
+import serendipity from './img/gallery/Serendipity.png';
 
 /* OTHER */
 import tbProfile from './img/other/tb_profile.jpeg';
@@ -48,7 +50,17 @@ function App() {
           <span id='top-title-text'>Welcome to my Showcase</span><br></br>
           <span id='top-title-info'>Personal 3D works, mods & more</span>
         </div>
-        <img src={terminus} alt='terminus'></img>
+        <div className='slide-imgs'>
+          <div className='top-img-container'>
+            <img src={terminus} alt='terminus'></img>
+          </div>
+          <div className='top-img-container'>
+            <img src={arcana} alt='arcana cards'></img>
+          </div>
+          <div className='top-img-container'>
+            <img src={serendipity} alt='serendipity'></img>
+          </div>
+        </div>
       </div>
       <div id='middle-section' className='debug-section'>
         <div className='middle-nav-section'>
