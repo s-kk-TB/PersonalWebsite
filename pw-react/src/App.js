@@ -50,35 +50,27 @@ function App() {
           <span id='top-title-text'>Welcome to my Showcase</span><br></br>
           <span id='top-title-info'>Personal 3D works, mods & more</span>
         </div>
-        <div className='slide-imgs'>
-          <div className='top-img-container'>
-            <img src={terminus} alt='terminus'></img>
-          </div>
-          <div className='top-img-container'>
-            <img src={arcana} alt='arcana cards'></img>
-          </div>
-          <div className='top-img-container'>
-            <img src={serendipity} alt='serendipity'></img>
-          </div>
-        </div>
+        <img src={terminus} alt='terminus'></img>
       </div>
       <div id='middle-section' className='debug-section'>
         <div className='middle-nav-section'>
-          <button className='middle-nav-bttns' onClick={
-            () => getNavBttnStyle(0, modsFilled, navImgArr)
-          }>
-            <img src={modsUnfilled} alt='Mods' className='middle-nav-imgs'></img>Mods
-          </button>
-          <button className='middle-nav-bttns' onClick={
-            () => getNavBttnStyle(1, projectFilled, navImgArr)
-          }>
-            <img src={projectUnfilled} alt='Projects' className='middle-nav-imgs'></img>3D Projects
-          </button>
-          <button className='middle-nav-bttns' onClick={
-            () => getNavBttnStyle(2, galleryFilled, navImgArr)
-          }>
-            <img src={galleryUnfilled} alt='gallery' className='middle-nav-imgs'></img>Gallery
-          </button>
+          <div>
+            <button className='middle-nav-bttns' onClick={
+              () => getNavBttnStyle(0, modsFilled, navImgArr)
+            }>
+              <img src={modsUnfilled} alt='Mods' className='middle-nav-imgs'></img>Mods
+            </button>
+            <button className='middle-nav-bttns' onClick={
+              () => getNavBttnStyle(1, projectFilled, navImgArr)
+            }>
+              <img src={projectUnfilled} alt='Projects' className='middle-nav-imgs'></img>3D Projects
+            </button>
+            <button className='middle-nav-bttns' onClick={
+              () => getNavBttnStyle(2, galleryFilled, navImgArr)
+            }>
+              <img src={galleryUnfilled} alt='gallery' className='middle-nav-imgs'></img>Gallery
+            </button>
+          </div>
         </div>
       </div>
       <div id='bottom-section' className='debug-section'>
