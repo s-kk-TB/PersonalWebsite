@@ -190,6 +190,7 @@ button:hover{
   border: 0.25vh solid #010109;
   border-radius: 1vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
+  left: -1vw;
 }
 
 .project-card-name{
@@ -255,22 +256,19 @@ button:hover{
   z-index: 1;
   width: 48%;
   height: 75%;
-  background-color: #FDFFFF;
-  border: 0.1vh solid #010109;
-  border-radius: 1vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 3px;
-  font-family: abril-fatface;
-  font-size: 4vh;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  top: 1vh;
   right: 0;
 }
 
 .project-card-img img{
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  
 }
 
 .project-card-bttn{
@@ -278,10 +276,7 @@ button:hover{
   z-index: 0;
   width: 48%;
   height: 22%;
-  background-color: #FDFFFF;
-  border: 0.1vh solid #010109;
-  border-radius: 1vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 3px;
+  background-color: transparent;
   font-family: abril-fatface;
   font-size: 4vh;
   display: flex;
