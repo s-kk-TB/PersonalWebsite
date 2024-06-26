@@ -1,4 +1,4 @@
-.bottom-project-card{
+.bottom-project-card-left{
     position: relative;
     width: 75vw;
     height: 60vh;
@@ -11,7 +11,7 @@
     margin-bottom: 2vh;
 }
 
-.project-card-name{
+.project-card-name-left{
     width: 50%;
     height: 20%;
     background-color: #FDFFFF;
@@ -27,7 +27,7 @@
     z-index: 3;
 }
 
-.project-card-software{
+.project-card-software-left{
     position: absolute;
     z-index: 2;
     width: 50%;
@@ -45,7 +45,7 @@
     top: 10vh;
 }
 
-.project-card-software img{
+.project-card-software-left img{
     width: 8%;
     height: auto;
     margin-top: 2vh;
@@ -53,7 +53,7 @@
     margin-right: 3vw;
 }
 
-.project-card-info{
+.project-card-info-left{
     position: absolute;
     z-index: 1;
     width: 50%;
@@ -69,7 +69,7 @@
     top: 20vh;
 }
 
-.project-card-img{
+.project-card-img-left{
     position: absolute;
     z-index: 1;
     width: 48%;
@@ -83,12 +83,12 @@
     right: 0;
 }
 
-.project-card-img img{
+.project-card-img-left img{
     width: auto;
     height: 100%;
 }
 
-.project-card-bttn{
+.project-card-bttn-left{
     position: absolute;
     z-index: 0;
     width: 48%;
@@ -103,7 +103,7 @@
     top: 46vh;
 }
 
-.project-card-bttn button{
+.project-card-bttn-left button{
     width: 95%;
     height: 60%;
     background-color: #FDFFFF;
@@ -114,7 +114,137 @@
     border-radius: 1.25vh;
 }
 
-.project-card-bttn button:hover{
+.project-card-bttn-left button:hover{
+    background-color: #449341;
+    border: 0.25vh solid #449341;
+    font-family: source-sans-pro-black;
+    color: #FDFFFF;
+    font-size: 3vh;
+    border-radius: 1.25vh;
+    transition: 0.25s ease-in-out;
+}
+
+/* PROJECT CARD RIGHT */
+.bottom-project-card-right{
+    position: relative;
+    width: 75vw;
+    height: 60vh;
+    background-color: #FDFFFF;
+    border: 0.25vh solid #010109;
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
+    left: 25.5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.project-card-name-right{
+    width: 50%;
+    height: 20%;
+    background-color: #FDFFFF;
+    border: 0.1vh solid #010109;
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
+    font-family: abril-fatface;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1.4vw;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+
+.project-card-software-right{
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 20%;
+    background-color: #FDFFFF;
+    border: 0.1vh solid #010109;
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 3px;
+    font-family: abril-fatface;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.4vw;
+    top: 10vh;
+    right: 0;
+}
+
+.project-card-software-right img{
+    width: 8%;
+    height: auto;
+    margin-top: 2vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.project-card-info-right{
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 66.5%;
+    background-color: #FDFFFF;
+    border: 0.1vh solid #010109;
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 3px;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1.4vw;
+    top: 20vh;
+    right: 0;
+}
+
+.project-card-img-right{
+    position: absolute;
+    z-index: 1;
+    width: 48%;
+    height: 75%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    top: 1vh;
+}
+
+.project-card-img-right img{
+    width: auto;
+    height: 100%;
+}
+
+.project-card-bttn-right{
+    position: absolute;
+    z-index: 0;
+    width: 48%;
+    height: 22%;
+    background-color: transparent;
+    font-family: abril-fatface;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 46vh;
+}
+
+.project-card-bttn-right button{
+    width: 95%;
+    height: 60%;
+    background-color: #FDFFFF;
+    border: 0.25vh solid #449341;
+    font-family: source-sans-pro-black;
+    color: #449341;
+    font-size: 3vh;
+    border-radius: 1.25vh;
+}
+
+.project-card-bttn-right button:hover{
     background-color: #449341;
     border: 0.25vh solid #449341;
     font-family: source-sans-pro-black;

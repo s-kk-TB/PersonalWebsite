@@ -35,6 +35,7 @@ import theatreMasks from './img/other/theatre masks.png';
 
 /* COMPONENTS */
 import ProjectCardLeft from './components/projectCards';
+import { ProjectCardRight } from './components/projectCards';
 
 let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
 
@@ -96,7 +97,16 @@ function App() {
           vsUnfilled={vsUnfilled}
           premiereproUnfilled={premiereproUnfilled}
           previewImg={theatreMasks}
-        />
+        />  
+        <ProjectCardRight
+          projectTitle='Arcana'
+          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
+          blenderUnfilled={blenderUnfilled}
+          photoshopUnfileed={photoshopUnfileed}
+          vsUnfilled={vsUnfilled}
+          premiereproUnfilled={premiereproUnfilled}
+          previewImg={arcana}
+        /> 
         <ProjectCardLeft
           projectTitle='Serendipity'
           projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
@@ -105,7 +115,7 @@ function App() {
           vsUnfilled={vsUnfilled}
           premiereproUnfilled={premiereproUnfilled}
           previewImg={serendipity}
-        />  
+        />
       </div>
       <div id='footer-section' className='debug-section'>
         <div id='footer-icons-filled'>
