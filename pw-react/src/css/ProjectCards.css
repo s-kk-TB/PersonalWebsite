@@ -51,6 +51,7 @@
     margin-top: 2vh;
     margin-left: 3vw;
     margin-right: 3vw;
+    filter: invert(22%) sepia(54%) saturate(3048%) hue-rotate(341deg) brightness(92%) contrast(100%);
 }
 
 .project-card-info-left{
@@ -181,6 +182,7 @@
     margin-top: 2vh;
     margin-left: 3vw;
     margin-right: 3vw;
+    filter: invert(22%) sepia(54%) saturate(3048%) hue-rotate(341deg) brightness(92%) contrast(100%);
 }
 
 .project-card-info-right{

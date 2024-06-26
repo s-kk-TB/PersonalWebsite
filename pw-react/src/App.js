@@ -9,6 +9,10 @@ import twitterFilled from './img/filled/icons8-twitter.png';
 import modsFilled from './img/filled/icons8-tools.png';
 import projectFilled from './img/filled/icons8-drawing.png';
 import galleryFilled from './img/filled/icons8-gallery.png';
+import blenderFilled from './img/filled/icons8-blender.png';
+import photoshopFilled from './img/filled/icons8-photoshop.png';
+import vsUnFilled from './img/filled/icons8-visual-studio.png';
+import premiereproFilled from './img/filled/icons8-adobe-premiere-pro.png';
 
 
 /* ICONS UNFILLED */
@@ -19,10 +23,10 @@ import galleryUnfilled from './img/unfilled/icons8-gallery.png';
 import instagramUnfilled from './img/unfilled/icons8-instagram.png';
 import redditUnfilled from './img/unfilled/icons8-reddit.png';
 import twitterUnfilled from './img/unfilled/icons8-twitter.png';
-import blenderUnfilled from './img/unfilled/icons8-blender-100.png';
-import photoshopUnfileed from './img/unfilled/icons8-photoshop-100.png';
-import vsUnfilled from './img/unfilled/icons8-visual-studio-100.png';
-import premiereproUnfilled from './img/unfilled/icons8-adobe-premiere-pro-100.png';
+import blenderUnfilled from './img/unfilled/icons8-blender.png';
+import photoshopUnfilled from './img/unfilled/icons8-photoshop.png';
+import vsUnfilled from './img/unfilled/icons8-visual-studio.png';
+import premiereproUnfilled from './img/unfilled/icons8-adobe-premiere-pro.png';
 
 /* GALLERY */
 import terminus from './img/gallery/Terminus.png';
@@ -92,28 +96,28 @@ function App() {
         <ProjectCardLeft 
           projectTitle='THEATRE MASKS'
           projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderUnfilled={blenderUnfilled}
-          photoshopUnfileed={photoshopUnfileed}
-          vsUnfilled={vsUnfilled}
-          premiereproUnfilled={premiereproUnfilled}
+          blenderImg={blenderFilled}
+          photoshopImg={photoshopFilled}
+          vsImg={vsUnfilled}
+          premiereproImg={premiereproUnfilled}
           previewImg={theatreMasks}
         />  
         <ProjectCardRight
           projectTitle='Arcana'
           projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderUnfilled={blenderUnfilled}
-          photoshopUnfileed={photoshopUnfileed}
-          vsUnfilled={vsUnfilled}
-          premiereproUnfilled={premiereproUnfilled}
+          blenderImg={blenderFilled}
+          photoshopImg={photoshopUnfilled}
+          vsImg={vsUnfilled}
+          premiereproImg={premiereproUnfilled}
           previewImg={arcana}
         /> 
         <ProjectCardLeft
           projectTitle='Serendipity'
           projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderUnfilled={blenderUnfilled}
-          photoshopUnfileed={photoshopUnfileed}
-          vsUnfilled={vsUnfilled}
-          premiereproUnfilled={premiereproUnfilled}
+          blenderImg={blenderUnfilled}
+          photoshopImg={photoshopUnfilled}
+          vsImg={vsUnfilled}
+          premiereproImg={premiereproUnfilled}
           previewImg={serendipity}
         />
       </div>
