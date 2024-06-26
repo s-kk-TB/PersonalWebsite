@@ -105,6 +105,12 @@ button:hover{
   filter: blur(3px) brightness(85%);
 }
 
+#img-slides-container{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
 
 /* MIDDLE SECTION */
 #middle-section{
@@ -180,131 +186,6 @@ button:hover{
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.bottom-project-card{
-  position: relative;
-  width: 75vw;
-  height: 60vh;
-  background-color: #FDFFFF;
-  border: 0.25vh solid #010109;
-  border-radius: 1vh;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
-  left: -1vw;
-}
-
-.project-card-name{
-  width: 50%;
-  height: 20%;
-  background-color: #FDFFFF;
-  border: 0.1vh solid #010109;
-  border-radius: 1vh;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
-  font-family: abril-fatface;
-  font-size: 4vh;
-  display: flex;
-  align-items: center;
-  padding-left: 1.4vw;
-  position: absolute;
-  z-index: 3;
-}
-
-.project-card-software{
-  position: absolute;
-  z-index: 2;
-  width: 50%;
-  height: 20%;
-  background-color: #FDFFFF;
-  border: 0.1vh solid #010109;
-  border-radius: 1vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 3px;
-  font-family: abril-fatface;
-  font-size: 4vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 1.4vw;
-  top: 10vh;
-}
-
-.project-card-software img{
-  width: 8%;
-  height: auto;
-  margin-top: 2vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
-}
-
-.project-card-info{
-  position: absolute;
-  z-index: 1;
-  width: 50%;
-  height: 66.5%;
-  background-color: #FDFFFF;
-  border: 0.1vh solid #010109;
-  border-radius: 1vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 3px;
-  font-size: 2vh;
-  display: flex;
-  align-items: center;
-  padding-left: 1.4vw;
-  top: 20vh;
-}
-
-.project-card-img{
-  position: absolute;
-  z-index: 1;
-  width: 48%;
-  height: 75%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  top: 1vh;
-  right: 0;
-}
-
-.project-card-img img{
-  width: auto;
-  height: 100%;
-  
-}
-
-.project-card-bttn{
-  position: absolute;
-  z-index: 0;
-  width: 48%;
-  height: 22%;
-  background-color: transparent;
-  font-family: abril-fatface;
-  font-size: 4vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  right: 0;
-  top: 46vh;
-}
-
-.project-card-bttn button{
-  width: 95%;
-  height: 60%;
-  background-color: #FDFFFF;
-  border: 0.25vh solid #449341;
-  font-family: source-sans-pro-black;
-  color: #449341;
-  font-size: 3vh;
-  border-radius: 1.25vh;
-}
-
-.project-card-bttn button:hover{
-  background-color: #449341;
-  border: 0.25vh solid #449341;
-  font-family: source-sans-pro-black;
-  color: #FDFFFF;
-  font-size: 3vh;
-  border-radius: 1.25vh;
-  transition: 0.25s ease-in-out;
 }
 
 /* FOOTER SECTION */

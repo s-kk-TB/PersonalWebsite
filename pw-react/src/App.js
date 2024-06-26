@@ -1,4 +1,5 @@
 import './css/App.css';
+import './css/ProjectCards.css';
 import getNavBttnStyle from './js/projectsPage';
 
 /* ICONS FILLED*/
@@ -32,6 +33,9 @@ import serendipity from './img/gallery/Serendipity.png';
 import tbProfile from './img/other/tb_profile.jpeg';
 import theatreMasks from './img/other/theatre masks.png';
 
+/* COMPONENTS */
+import ProjectCardLeft from './components/projectCards';
+
 let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
 
 function App() {
@@ -50,7 +54,9 @@ function App() {
           <span id='top-title-text'>Welcome to my Showcase</span><br></br>
           <span id='top-title-info'>Personal 3D works, mods & more</span>
         </div>
-        <img src={terminus} alt='terminus'></img>
+        <div id='img-slides-container'>
+          <img src={terminus} alt='slide 1'></img>
+        </div>
       </div>
       <div id='middle-section' className='debug-section'>
         <div className='middle-nav-section'>
@@ -82,22 +88,24 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='bottom-project-card'>
-          <div className='project-card-name'>PROJECT NAME</div>
-          <div className='project-card-software'>
-            <img src={blenderUnfilled} alt='Blender'></img>
-            <img src={photoshopUnfileed} alt='Photoshop'></img>
-            <img src={vsUnfilled} alt='Visual studio code'></img>
-            <img src={premiereproUnfilled} alt='Premiere pro'></img>
-          </div>
-          <div className='project-card-info'>INFO HERE</div>
-          <div className='project-card-img'>
-            <img src={theatreMasks} alt='preview'></img>
-          </div>
-          <div className='project-card-bttn'>
-            <button>Learn More</button>
-          </div>
-        </div>
+        <ProjectCardLeft 
+          projectTitle='THEATRE MASKS'
+          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
+          blenderUnfilled={blenderUnfilled}
+          photoshopUnfileed={photoshopUnfileed}
+          vsUnfilled={vsUnfilled}
+          premiereproUnfilled={premiereproUnfilled}
+          previewImg={theatreMasks}
+        />
+        <ProjectCardLeft
+          projectTitle='Serendipity'
+          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
+          blenderUnfilled={blenderUnfilled}
+          photoshopUnfileed={photoshopUnfileed}
+          vsUnfilled={vsUnfilled}
+          premiereproUnfilled={premiereproUnfilled}
+          previewImg={serendipity}
+        />  
       </div>
       <div id='footer-section' className='debug-section'>
         <div id='footer-icons-filled'>
