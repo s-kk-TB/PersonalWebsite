@@ -18,7 +18,7 @@
   src: url('./fonts/source-sans-pro/SourceSansPro-Black.ttf');
 }
 
-button:hover{
+button:hover, select:hover{
   cursor: pointer;
 }
 
@@ -74,10 +74,15 @@ button:hover{
   justify-content: end;
 }
 
-#header-skills-section img{
-  margin-left: 0.5vw;
-  width: 1.5vw;
-  height: auto;
+#header-skills-section select{
+  background: transparent;
+  border: 0;
+  border-radius: 0.5vh;
+}
+
+#header-skills-section select option:disabled{
+  background-color: #FDFFFF;
+  color: #010109;
 }
 
 /* TOP SECTION */
