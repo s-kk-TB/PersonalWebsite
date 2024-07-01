@@ -38,8 +38,9 @@ import tbProfile from './img/other/tb_profile.jpeg';
 import theatreMasks from './img/other/theatre masks.png';
 
 /* COMPONENTS */
-import ProjectCardLeft from './components/projectCards';
-import { ProjectCardRight } from './components/projectCards';
+import ProjectCardLeft from './components/ProjectCards';
+import { ProjectCardRight } from './components/ProjectCards';
+import Footer from './components/Footer';
 
 let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
 
@@ -119,30 +120,14 @@ function App() {
           previewImg={serendipity}
         />
       </div>
-      <div id='footer-section' className='debug-section'>
-        <div id='footer-icons-filled'>
-          <a href='https://www.instagram.com/trolledbartholomew/' target='_blank' rel='noreferrer'>
-            <img src={instagramFilled} alt='instagram-filled'></img>
-          </a>
-          <a href='https://www.reddit.com/user/TrolledBartholomew/' target='_blank' rel='noreferrer'>
-            <img src={redditFilled} alt='reddit-filled'></img>
-          </a>
-          <a href='https://x.com/TrolledBartholo' target='_blank' rel='noreferrer'>
-            <img src={twitterFilled} alt='twitter-filled'></img>
-          </a>
-        </div>
-        <div id='footer-icons-unfilled'>
-          <a href='https://www.instagram.com/trolledbartholomew/' target='_blank' rel='noreferrer'>
-            <img src={instagramUnfilled} alt='instagram-unfilled'></img>
-          </a>
-          <a href='https://www.reddit.com/user/TrolledBartholomew/' target='_blank' rel='noreferrer'>
-            <img src={redditUnfilled} alt='reddit-unfilled'></img>
-          </a>
-          <a href='https://x.com/TrolledBartholo' target='_blank' rel='noreferrer'>
-            <img src={twitterUnfilled} alt='twitter-unfilled'></img>
-          </a>
-        </div>
-      </div>
+      <Footer 
+        instagramFilled={instagramFilled}
+        instagramUnfilled={instagramUnfilled}
+        twitterFilled={twitterFilled}
+        twitterUnfilled={twitterUnfilled}
+        redditFilled={redditFilled}
+        redditUnfilled={redditUnfilled}
+      />
     </div>
   );
 }
