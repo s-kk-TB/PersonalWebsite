@@ -1,5 +1,6 @@
 import './css/App.css';
 import './css/ProjectCards.css';
+import './css/Footer.css';
 import getNavBttnStyle from './js/projectsPage';
 
 /* ICONS FILLED*/

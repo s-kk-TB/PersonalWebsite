@@ -1,0 +1,35 @@
+/* FOOTER SECTION */
+#footer-section{
+    height: 10vh;
+    background-color: #010109;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-section img{
+    width: 2vw;
+    height: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    filter: invert(100%) sepia(21%) saturate(1834%) hue-rotate(174deg) brightness(103%) contrast(101%);
+}
+
+#footer-icons-filled{
+    position: absolute;
+    z-index: 5;
+}
+
+#footer-icons-filled a{
+    opacity: 0%;
+}
+
+#footer-icons-filled a:hover{
+    opacity: 100%;
+    transition: 0.15s ease-in-out;
+}
+
+#footer-icons-unfilled img:hover{
+    opacity: 0%;
+    transition: 0.05s ease-in-out;
+}
