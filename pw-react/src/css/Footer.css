@@ -8,26 +8,21 @@
 }
 
 #footer-section img{
-    width: 2vw;
+    width: 1.75vw;
     height: auto;
     margin-left: 1vw;
     margin-right: 1vw;
     filter: invert(100%) sepia(21%) saturate(1834%) hue-rotate(174deg) brightness(103%) contrast(101%);
 }
 
-#footer-icons-filled{
-    position: absolute;
-    z-index: 5;
+#img-insta:hover{
+    content: url(../img/filled/icons8-instagram.png);
 }
 
-#footer-icons-filled a{
-    opacity: 0%;
+#img-reddit:hover{
+    content: url(../img/filled/icons8-reddit.png);
 }
 
-#footer-icons-filled a:hover{
-    opacity: 100%;
-}
-
-#footer-icons-unfilled a:hover{
-    opacity: 0%;
+#img-twitter:hover{
+    content: url(../img/filled/icons8-twitter.png);
 }

@@ -142,11 +142,8 @@ function App() {
         />
       </div>
       <Footer 
-        instagramFilled={instagramFilled}
         instagramUnfilled={instagramUnfilled}
-        twitterFilled={twitterFilled}
         twitterUnfilled={twitterUnfilled}
-        redditFilled={redditFilled}
         redditUnfilled={redditUnfilled}
       />
     </div>
