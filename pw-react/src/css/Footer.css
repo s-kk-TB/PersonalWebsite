@@ -26,10 +26,8 @@
 
 #footer-icons-filled a:hover{
     opacity: 100%;
-    transition: 0.15s ease-in-out;
 }
 
-#footer-icons-unfilled img:hover{
+#footer-icons-unfilled a:hover{
     opacity: 0%;
-    transition: 0.05s ease-in-out;
 }

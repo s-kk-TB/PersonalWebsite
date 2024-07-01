@@ -77,7 +77,11 @@ function App() {
           <span id='top-title-text'>Welcome to my Showcase</span><br></br>
           <span id='top-title-info'>Personal 3D works, mods & more</span>
         </div>
-        <img src={terminus} alt='slide 1'></img>
+        <div id='img-slideshow-container'>
+          <img src={terminus} alt='slide 1'></img>
+          <img src={arcana} alt='slide 2'></img>
+          <img src={serendipity} alt='slide 3'></img>
+        </div>
       </div>
       <div id='middle-section' className='debug-section'>
         <div className='middle-nav-section'>
