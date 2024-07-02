@@ -1,4 +1,8 @@
-export default function Footer({instagramUnfilled,twitterUnfilled,redditUnfilled}){
+import instagramUnfilled from '../img/unfilled/icons8-instagram.png';
+import redditUnfilled from '../img/unfilled/icons8-reddit.png';
+import twitterUnfilled from '../img/unfilled/icons8-twitter.png';
+
+export default function Footer(){
     return(
       <div id='footer-section' className='debug-section'>
         <div id='footer-icons-unfilled'>

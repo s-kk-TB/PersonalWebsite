@@ -4,9 +4,6 @@ import './css/Footer.css';
 import getNavBttnStyle from './js/projectsPage';
 
 /* ICONS FILLED*/
-import instagramFilled from './img/filled/icons8-instagram.png';
-import redditFilled from './img/filled/icons8-reddit.png';
-import twitterFilled from './img/filled/icons8-twitter.png';
 import modsFilled from './img/filled/icons8-tools.png';
 import projectFilled from './img/filled/icons8-drawing.png';
 import galleryFilled from './img/filled/icons8-gallery.png';
@@ -17,13 +14,9 @@ import premiereproFilled from './img/filled/icons8-adobe-premiere-pro.png';
 
 
 /* ICONS UNFILLED */
-import dwnArrowUnfilled from './img/unfilled/icons8-arrow.png';
 import modsUnfilled from './img/unfilled/icons8-tools.png';
 import projectUnfilled from './img/unfilled/icons8-drawing.png';
 import galleryUnfilled from './img/unfilled/icons8-gallery.png';
-import instagramUnfilled from './img/unfilled/icons8-instagram.png';
-import redditUnfilled from './img/unfilled/icons8-reddit.png';
-import twitterUnfilled from './img/unfilled/icons8-twitter.png';
 import blenderUnfilled from './img/unfilled/icons8-blender.png';
 import photoshopUnfilled from './img/unfilled/icons8-photoshop.png';
 import vsUnfilled from './img/unfilled/icons8-visual-studio.png';
@@ -141,11 +134,7 @@ function App() {
           previewImg={serendipity}
         />
       </div>
-      <Footer 
-        instagramUnfilled={instagramUnfilled}
-        twitterUnfilled={twitterUnfilled}
-        redditUnfilled={redditUnfilled}
-      />
+      <Footer />
     </div>
   );
 }
