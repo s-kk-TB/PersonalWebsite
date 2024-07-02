@@ -1,4 +1,3 @@
-/* FOOTER SECTION */
 #footer-section{
     height: 10vh;
     background-color: #010109;
@@ -15,14 +14,14 @@
     filter: invert(100%) sepia(21%) saturate(1834%) hue-rotate(174deg) brightness(103%) contrast(101%);
 }
 
-#img-insta:hover{
+#footer-img-insta:hover{
     content: url(../img/filled/icons8-instagram.png);
 }
 
-#img-reddit:hover{
+#footer-img-reddit:hover{
     content: url(../img/filled/icons8-reddit.png);
 }
 
-#img-twitter:hover{
+#footer-img-twitter:hover{
     content: url(../img/filled/icons8-twitter.png);
 }
