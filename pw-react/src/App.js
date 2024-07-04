@@ -1,12 +1,11 @@
 import './css/App.css';
 import './css/ProjectCards.css';
 import './css/Footer.css';
-import getNavBttnStyle from './js/projectsPage';
+
+/* ROUTER */
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom"; 
 
 /* ICONS FILLED*/
-import modsFilled from './img/filled/icons8-tools.png';
-import projectFilled from './img/filled/icons8-drawing.png';
-import galleryFilled from './img/filled/icons8-gallery.png';
 import blenderFilled from './img/filled/icons8-blender.png';
 import photoshopFilled from './img/filled/icons8-photoshop.png';
 import vsUnFilled from './img/filled/icons8-visual-studio.png';
@@ -14,9 +13,6 @@ import premiereproFilled from './img/filled/icons8-adobe-premiere-pro.png';
 
 
 /* ICONS UNFILLED */
-import modsUnfilled from './img/unfilled/icons8-tools.png';
-import projectUnfilled from './img/unfilled/icons8-drawing.png';
-import galleryUnfilled from './img/unfilled/icons8-gallery.png';
 import blenderUnfilled from './img/unfilled/icons8-blender.png';
 import photoshopUnfilled from './img/unfilled/icons8-photoshop.png';
 import vsUnfilled from './img/unfilled/icons8-visual-studio.png';
@@ -32,11 +28,12 @@ import tbProfile from './img/other/tb_profile.jpeg';
 import theatreMasks from './img/other/theatre masks.png';
 
 /* COMPONENTS */
+import Navbar from './components/Navbar';
 import ProjectCardLeft from './components/ProjectCards';
 import { ProjectCardRight } from './components/ProjectCards';
 import Footer from './components/Footer';
 
-let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
+
 
 function App() {
   return (
@@ -78,23 +75,7 @@ function App() {
       </div>
       <div id='middle-section' className='debug-section'>
         <div className='middle-nav-section'>
-          <div>
-            <button className='middle-nav-bttns' onClick={
-              () => getNavBttnStyle(0, modsFilled, navImgArr)
-            }>
-              <img src={modsUnfilled} alt='Mods' className='middle-nav-imgs'></img>Mods
-            </button>
-            <button className='middle-nav-bttns' onClick={
-              () => getNavBttnStyle(1, projectFilled, navImgArr)
-            }>
-              <img src={projectUnfilled} alt='Projects' className='middle-nav-imgs'></img>3D Projects
-            </button>
-            <button className='middle-nav-bttns' onClick={
-              () => getNavBttnStyle(2, galleryFilled, navImgArr)
-            }>
-              <img src={galleryUnfilled} alt='gallery' className='middle-nav-imgs'></img>Gallery
-            </button>
-          </div>
+          <Navbar />
         </div>
       </div>
       <div id='bottom-section' className='debug-section'>
