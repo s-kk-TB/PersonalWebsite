@@ -1,21 +1,5 @@
-/* ROUTER */
-
 import './css/App.css';
-import './css/ProjectCards.css';
 import './css/Footer.css';
-
-/* ICONS FILLED*/
-import blenderFilled from './img/filled/icons8-blender.png';
-import photoshopFilled from './img/filled/icons8-photoshop.png';
-import vsUnFilled from './img/filled/icons8-visual-studio.png';
-import premiereproFilled from './img/filled/icons8-adobe-premiere-pro.png';
-
-
-/* ICONS UNFILLED */
-import blenderUnfilled from './img/unfilled/icons8-blender.png';
-import photoshopUnfilled from './img/unfilled/icons8-photoshop.png';
-import vsUnfilled from './img/unfilled/icons8-visual-studio.png';
-import premiereproUnfilled from './img/unfilled/icons8-adobe-premiere-pro.png';
 
 /* GALLERY */
 import terminus from './img/gallery/Terminus.png';
@@ -24,17 +8,12 @@ import serendipity from './img/gallery/Serendipity.png';
 
 /* OTHER */
 import tbProfile from './img/other/tb_profile.jpeg';
-import theatreMasks from './img/other/theatre masks.png';
 
 /* COMPONENTS */
 import Navbar from './components/Navbar';
-import ProjectCardLeft from './components/ProjectCards';
-import { ProjectCardRight } from './components/ProjectCards';
 import Footer from './components/Footer';
 
-
-
-function App() {
+function Gallery() {
   return (
     <div id="main-page">
       <div id='header-section' className='debug-section'>
@@ -63,8 +42,7 @@ function App() {
       </div>
       <div id='top-section' className='debug-section'>
         <div id='top-title-section'>
-          <span id='top-title-text'>Welcome to my Showcase</span><br></br>
-          <span id='top-title-info'>Personal 3D works, mods & more</span>
+          <span id='top-title-text'>Welcome to my Gallery</span><br></br>
         </div>
         <div id='img-slideshow-container'>
           <img src={terminus} alt='slide 1'></img>
@@ -86,37 +64,10 @@ function App() {
             </div>
           </div>
         </div>
-        <ProjectCardLeft 
-          projectTitle='THEATRE MASKS'
-          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderImg={blenderFilled}
-          photoshopImg={photoshopFilled}
-          vsImg={vsUnfilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={theatreMasks}
-        />  
-        <ProjectCardRight
-          projectTitle='Arcana'
-          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderImg={blenderFilled}
-          photoshopImg={photoshopUnfilled}
-          vsImg={vsUnfilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={arcana}
-        /> 
-        <ProjectCardLeft
-          projectTitle='Serendipity'
-          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderImg={blenderUnfilled}
-          photoshopImg={photoshopUnfilled}
-          vsImg={vsUnfilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={serendipity}
-        />
       </div>
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default Gallery;

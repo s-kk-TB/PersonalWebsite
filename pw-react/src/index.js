@@ -1,10 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
+
+/* PAGES */
 import App from './App';
+import Mods from './Mods';
+import Gallery from "./Gallery";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+        <Routes>
+          <Route path='/' element={<App />} />
+          <Route path='/Mods' element={<Mods />} />
+          <Route path="/Gallery" element={<Gallery />} />
+        </Routes>
+    </Router>
   </React.StrictMode>
 );
