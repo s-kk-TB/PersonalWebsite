@@ -1,10 +1,15 @@
 import './css/App.css';
+import './css/Gallery.css';
 import './css/Footer.css';
 
 /* GALLERY */
 import terminus from './img/gallery/Terminus.png';
 import arcana from './img/gallery/arcana.png';
 import serendipity from './img/gallery/Serendipity.png';
+import akkan from './img/gallery/Akkans corruption.png';
+import fedora from './img/gallery/BetteFedora.jpg';
+import blackhole from './img/gallery/black hole.png';
+import theatremasks from './img/gallery/theatre masks.png';
 
 /* OTHER */
 import tbProfile from './img/other/tb_profile.jpeg';
@@ -12,10 +17,14 @@ import tbProfile from './img/other/tb_profile.jpeg';
 /* COMPONENTS */
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import GalleryImgSlide from './components/GalleryImgSlide';
 
 function Gallery() {
   return (
     <div id="main-page">
+        <div id='gallery-img-highlight'>
+          <img id='gallery-img' src={terminus} alt='img-highlight'></img>
+        </div>
       <div id='header-section' className='debug-section'>
         <div id="header-name-section">
           <img src={tbProfile} alt='Profile icon'></img><span>TrolledBartholomew</span>
@@ -59,10 +68,39 @@ function Gallery() {
         <div className='bottom-info-block'>
           <div className='bottom-info-card'>
             <div>
-              This section showcases 3D projects created during my free
-              time that are just for posting on social media.
+              This section showcases all media relating to the various projects I have done.
             </div>
           </div>
+        </div>
+        <div id='gallery-img-container'>
+          <GalleryImgSlide 
+            GalleryImg={terminus}
+            AltText='Terminus'
+          />
+          <GalleryImgSlide 
+            GalleryImg={serendipity}
+            AltText='Serendipity'
+          />
+          <GalleryImgSlide 
+            GalleryImg={akkan}
+            AltText='Akkans corruption'
+          />
+          <GalleryImgSlide 
+            GalleryImg={fedora}
+            AltText="Bette's Fedora"
+          />
+          <GalleryImgSlide 
+            GalleryImg={blackhole}
+            AltText='Black hole'
+          />
+          <GalleryImgSlide 
+            GalleryImg={theatremasks}
+            AltText='Theatre masks'
+          />
+          <GalleryImgSlide 
+            GalleryImg={arcana}
+            AltText='Arcana cards'
+          />
         </div>
       </div>
       <Footer />

@@ -116,7 +116,7 @@ button:hover, select:hover{
 
 #top-title-section{
   position: absolute;
-  z-index: 999;
+  z-index: 9;
   color: #FDFFFF;
   font-family: abril-fatface;
   text-align: center;
