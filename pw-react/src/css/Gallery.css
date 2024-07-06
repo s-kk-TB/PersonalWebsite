@@ -1,7 +1,8 @@
 #gallery-img-container{
+    margin: 0;
+    padding: 0;
     width: 100vw;
-    height: 40vh;
-    overflow: hidden;
+    height: auto;
 }
 
 #gallery-img-container button{
@@ -12,16 +13,17 @@
 }
 
 #gallery-img-container img{
-    float: left;
+    float: inline-start;
     width: auto;
     height: 40vh;
 }
 
+/* IMG SELECTED */
 #gallery-img-highlight{
     position: absolute;
     width: 100vw;
     height: 100%;
-    z-index: 999;
+    z-index: 10;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.25);
     display: none;
@@ -30,6 +32,17 @@
     overflow: hidden;
 }
 
+#gallery-img-highlight button{
+    position: absolute;
+    z-index: 11;
+    background-color: transparent;
+    border: 0;
+    width: 100vw;
+    height: 100%;
+}
+
 #gallery-img-highlight img{
-    object-fit: contain;
+    position: relative;
+    z-index: 12;
+    width: 40%;
 }

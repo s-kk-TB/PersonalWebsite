@@ -1,4 +1,4 @@
-import DisplayImgHighlight from '../js/Gallery';
+import DisplayImgHighlight from '../js/GalleryFunctionality';
 
 export default function GalleryImgSlide({ GalleryImg, AltText }){
     return(

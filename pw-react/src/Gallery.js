@@ -19,10 +19,16 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import GalleryImgSlide from './components/GalleryImgSlide';
 
+/* FUNCTIONALITY */
+import { CloseImgHighlight } from './js/GalleryFunctionality';
+
 function Gallery() {
   return (
     <div id="main-page">
         <div id='gallery-img-highlight'>
+          <button onClick={
+            () => CloseImgHighlight()
+          }></button>
           <img id='gallery-img' src={terminus} alt='img-highlight'></img>
         </div>
       <div id='header-section' className='debug-section'>
@@ -100,6 +106,10 @@ function Gallery() {
           <GalleryImgSlide 
             GalleryImg={arcana}
             AltText='Arcana cards'
+          />
+          <GalleryImgSlide 
+            GalleryImg={fedora}
+            AltText="Bette's Fedora"
           />
         </div>
       </div>

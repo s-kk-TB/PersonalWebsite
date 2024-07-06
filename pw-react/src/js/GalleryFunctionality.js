@@ -4,3 +4,8 @@ export default function DisplayImgHighlight(GalleryImg){
     GalleryImgContainer.style.display = 'flex';
     GImg.src = GalleryImg;
 }
+
+export function CloseImgHighlight(){
+    const GalleryImgContainer = document.getElementById('gallery-img-highlight');
+    GalleryImgContainer.style.display = 'none';
+}
