@@ -13,7 +13,25 @@ import tbProfile from './img/other/tb_profile.jpeg';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+import getNavBttnStyle from './js/projectsPage';
+
+/* FILLED ICONS */
+import modsFilled from './img/filled/icons8-tools.png';
+import projectFilled from './img/filled/icons8-drawing.png';
+import galleryFilled from './img/filled/icons8-gallery.png';
+
+/* UNFILLED ICONS */
+import modsUnfilled from './img/unfilled/icons8-tools.png';
+import projectUnfilled from './img/unfilled/icons8-drawing.png';
+import galleryUnfilled from './img/unfilled/icons8-gallery.png';
+import { useEffect } from 'react';
+
+let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
+
 function Mods() {
+  useEffect(() => {
+    getNavBttnStyle(0, modsFilled, navImgArr)
+  })
   return (
     <div id="main-page">
       <div id='header-section' className='debug-section'>

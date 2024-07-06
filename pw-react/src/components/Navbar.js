@@ -18,23 +18,17 @@ export default function Navbar(){
     return(
         <div>
             <Link to="/Mods">
-            <button className='middle-nav-bttns' onClick={
-                () => getNavBttnStyle(0, modsFilled, navImgArr)
-            }>
+            <button className='middle-nav-bttns'>
                 <img src={modsUnfilled} alt='Mods' className='middle-nav-imgs'></img>Mods
             </button>
             </Link>
             <Link to="/">
-                <button className='middle-nav-bttns' onClick={
-                    () => getNavBttnStyle(1, projectFilled, navImgArr)
-                }>
+                <button className='middle-nav-bttns'>
                     <img src={projectUnfilled} alt='Projects' className='middle-nav-imgs'></img>3D Projects
                 </button>
             </Link>
             <Link to="/Gallery">
-                <button className='middle-nav-bttns' onClick={
-                    () => getNavBttnStyle(2, galleryFilled, navImgArr)
-                }>
+                <button className='middle-nav-bttns'>
                     <img src={galleryUnfilled} alt='gallery' className='middle-nav-imgs'></img>Gallery
                 </button>
             </Link>

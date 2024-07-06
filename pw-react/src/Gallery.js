@@ -2,6 +2,18 @@ import './css/App.css';
 import './css/Gallery.css';
 import './css/Footer.css';
 
+import getNavBttnStyle from './js/projectsPage';
+
+/* FILLED ICONS */
+import modsFilled from './img/filled/icons8-tools.png';
+import projectFilled from './img/filled/icons8-drawing.png';
+import galleryFilled from './img/filled/icons8-gallery.png';
+
+/* UNFILLED ICONS */
+import modsUnfilled from './img/unfilled/icons8-tools.png';
+import projectUnfilled from './img/unfilled/icons8-drawing.png';
+import galleryUnfilled from './img/unfilled/icons8-gallery.png';
+
 /* GALLERY */
 import terminus from './img/gallery/Terminus.png';
 import arcana from './img/gallery/arcana.png';
@@ -21,8 +33,14 @@ import GalleryImgSlide from './components/GalleryImgSlide';
 
 /* FUNCTIONALITY */
 import { CloseImgHighlight } from './js/GalleryFunctionality';
+import { useEffect } from 'react';
+
+let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
 
 function Gallery() {
+  useEffect(() => {
+    getNavBttnStyle(2, galleryFilled, navImgArr)
+  })
   return (
     <div id="main-page">
         <div id='gallery-img-highlight'>
