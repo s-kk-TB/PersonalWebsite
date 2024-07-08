@@ -47,7 +47,9 @@ function Gallery() {
           <button onClick={
             () => CloseImgHighlight()
           }></button>
-          <img id='gallery-img' src={terminus} alt='img-highlight'></img>
+          <div className='highlight-container'>
+            <img id='gallery-img' src={terminus} alt='img-highlight'></img>
+          </div>
         </div>
       <div id='header-section' className='debug-section'>
         <div id="header-name-section">
