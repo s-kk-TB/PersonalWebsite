@@ -97,38 +97,44 @@ function Gallery() {
           </div>
         </div>
         <div id='gallery-img-container'>
-          <GalleryImgSlide 
-            GalleryImg={terminus}
-            AltText='Terminus'
-          />
-          <GalleryImgSlide 
-            GalleryImg={serendipity}
-            AltText='Serendipity'
-          />
-          <GalleryImgSlide 
-            GalleryImg={akkan}
-            AltText='Akkans corruption'
-          />
-          <GalleryImgSlide 
-            GalleryImg={fedora}
-            AltText="Bette's Fedora"
-          />
-          <GalleryImgSlide 
-            GalleryImg={blackhole}
-            AltText='Black hole'
-          />
-          <GalleryImgSlide 
-            GalleryImg={theatremasks}
-            AltText='Theatre masks'
-          />
-          <GalleryImgSlide 
-            GalleryImg={arcana}
-            AltText='Arcana cards'
-          />
-          <GalleryImgSlide 
-            GalleryImg={fedora}
-            AltText="Bette's Fedora"
-          />
+          <div className='gallery-column'>
+            <GalleryImgSlide 
+              GalleryImg={terminus}
+              AltText='Terminus'
+            />
+            <GalleryImgSlide 
+              GalleryImg={serendipity}
+              AltText='Serendipity'
+            />
+            <GalleryImgSlide 
+              GalleryImg={akkan}
+              AltText='Akkans corruption'
+            />
+          </div>
+          <div className='gallery-column'>
+            <GalleryImgSlide 
+              GalleryImg={fedora}
+              AltText="Bette's Fedora"
+            />
+            <GalleryImgSlide 
+              GalleryImg={blackhole}
+              AltText='Black hole'
+            />
+            <GalleryImgSlide 
+              GalleryImg={theatremasks}
+              AltText='Theatre masks'
+            />
+          </div>
+          <div className='gallery-column'>
+            <GalleryImgSlide 
+              GalleryImg={arcana}
+              AltText='Arcana cards'
+            />
+            <GalleryImgSlide 
+              GalleryImg={fedora}
+              AltText="Bette's Fedora"
+            />
+          </div>
         </div>
       </div>
       <Footer />

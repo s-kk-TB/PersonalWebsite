@@ -3,6 +3,8 @@
     padding: 0;
     width: 100vw;
     height: auto;
+    display: flex;
+    float: left;
 }
 
 #gallery-img-container button{
@@ -13,9 +15,16 @@
 }
 
 #gallery-img-container img{
+    width: 100%;
+    height: auto;
+    margin-bottom: -0.6vh;  
+}
+
+.gallery-column{
+    width: 33.4%;
+    height: 100%;
     float: inline-start;
-    width: auto;
-    height: 40vh;
+    align-items:start;
 }
 
 /* IMG SELECTED */
@@ -44,5 +53,5 @@
 #gallery-img-highlight img{
     position: relative;
     z-index: 12;
-    width: 40%;
+    object-fit: contain;
 }
