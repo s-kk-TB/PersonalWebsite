@@ -14,7 +14,11 @@ export default function ProjectCardLeft({projectTitle,blenderImg,photoshopImg,vs
                 <img src={previewImg} alt='preview'></img>
             </div>
             <div className='project-card-bttn-left'>
-                <button>Learn More</button>
+                <button onClick={
+                    () => window.location.href = "/Project"
+                }>
+                    Learn More
+                </button>
             </div>
         </div>
     )
@@ -27,7 +31,11 @@ export function ProjectCardRight({projectTitle,blenderImg,photoshopImg,vsImg,pre
                 <img src={previewImg} alt='preview'></img>
             </div>
             <div className='project-card-bttn-right'>
-                <button>Learn More</button>
+                <button onClick={
+                    () => window.location.href = "/Project"
+                }>
+                    Learn More
+                </button>
             </div>
             <div className='project-card-name-right'>{projectTitle}</div>
             <div className='project-card-software-right'>

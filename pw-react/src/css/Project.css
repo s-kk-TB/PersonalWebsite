@@ -1,0 +1,70 @@
+#project-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-container-sub{
+    width: 85%;
+    height: 100%;
+}
+
+#viewport-container, #viewport-section-cards{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#viewport-container{
+    position: relative;
+    z-index: 3;
+    border: 0.1vh solid black;
+    border-radius: 0.3vh;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 3px;
+    background-color: #FDFFFF;
+    width: 85%;
+    height: 65vh;
+}
+
+#viewport-section-cards{
+    width: 85%;
+    height: auto;
+}
+
+.viewport-card{
+    position: relative;
+    z-index: 1;
+    width: 8%;
+    height: 15vh;
+    margin-right: 1vw;
+    border-radius: 0.4vh;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 3px;
+    background-color: #FDFFFF;
+}
+
+.viewport-card button{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-unselected{
+    filter: invert(24%) sepia(48%) saturate(2736%) hue-rotate(338deg) brightness(93%) contrast(103%);
+    width: 50%;
+    height: auto;
+}
+
+.arrow-unselected{
+    filter: invert(24%) sepia(48%) saturate(2736%) hue-rotate(338deg) brightness(93%) contrast(103%);
+    width: 25%;
+    height: auto;
+}
