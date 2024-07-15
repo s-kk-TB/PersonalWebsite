@@ -28,6 +28,7 @@ import tbProfile from './img/other/tb_profile.jpeg';
 /* COMPONENTS */
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Viewport from './components/Viewport';
 
 function Project() {
   return (
@@ -75,7 +76,7 @@ function Project() {
         <div id='project-container'>
           <div id='project-container-sub'>
             <div id='viewport-container'>
-                PAST!
+                <Viewport />
             </div>
             <div id='viewport-section-cards'>
               <div className='viewport-card'>
