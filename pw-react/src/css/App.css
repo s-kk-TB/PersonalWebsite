@@ -22,16 +22,16 @@
   0%{
     transform: translateX(0%);
   }
-  30%{
+  20%{
     transform: translateX(0%);
   }
   40%{
     transform: translateX(-100%);
   }
-  65%{
+  60%{
     transform: translateX(-100%);
   }
-  75%{
+  80%{
     transform: translateX(-200%);
   }
   100%{
@@ -133,15 +133,15 @@ button:hover, select:hover{
   display: flex;
   justify-content: baseline;
   align-items: center;
-  animation: slide 15s infinite ease-in-out;
+  animation: slide 12s infinite ease-in-out;
   animation-direction: alternate;
 }
 
 #top-section img{
   width: 100vw;
   height: auto;
-  margin: 0;
   padding: 0;
+  margin: 0;
   filter: blur(3px) brightness(85%);
 }
 
