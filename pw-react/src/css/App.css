@@ -143,6 +143,7 @@ button:hover, select:hover{
   padding: 0;
   margin: 0;
   filter: blur(3px) brightness(85%);
+  transform: scale(1.0045);
 }
 
 
