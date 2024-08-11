@@ -31,6 +31,8 @@
 }
 
 #viewport-section-info{
+    position: relative;
+    z-index: 2;
     margin-left: 6.3vw;
     width: 85%;
     height: 10vh;
@@ -73,4 +75,23 @@
 #info-container-right{
     padding-right: 1vw;
     justify-content: right;
+}
+
+#info-expand-container{
+    position: relative;
+    z-index: 1;
+    margin-left: 6.3vw;
+    width: 81%;
+    background-color: #FDFFFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 3px;
+    padding: 2%;
+}
+
+#info-expand-container span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
 }

@@ -31,6 +31,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Viewport from './components/Viewport';
 
+/* FUNCTIONALITY */
+import changeIcon from './js/ProjectFunc';
+
+/* ICON ARRAYS */
+const unfilledIconSet = [blenderUnfilled,photoshopUnfilled,premiereproUnfilled,vsUnfilled];
+const filledIconSet = [blenderFilled,photoshopFilled,premiereproFilled,vsFilled];
+
 function Project() {
   return (
     <div id="main-page">
@@ -81,17 +88,25 @@ function Project() {
             </div>
             <div id='viewport-section-info'>
               <div className='info-container' id='info-container-left'>
-                <button>
-                  <img src={blenderUnfilled} alt='blender'></img>
+                <button onClick={
+                  () => changeIcon(unfilledIconSet,filledIconSet,0)
+                }>
+                  <img className='info-icon' src={blenderUnfilled} alt='blender'></img>
                 </button>
-                <button>
-                  <img src={photoshopUnfilled} alt='photoshop'></img>
+                <button onClick={
+                  () => changeIcon(unfilledIconSet,filledIconSet,1)
+                }>
+                  <img className='info-icon' src={photoshopUnfilled} alt='photoshop'></img>
                 </button>
-                <button>
-                  <img src={premiereproUnfilled} alt='premiere pro'></img>
+                <button onClick={
+                  () => changeIcon(unfilledIconSet,filledIconSet,2)
+                }>
+                  <img className='info-icon' src={premiereproUnfilled} alt='premiere pro'></img>
                 </button>
-                <button>
-                  <img src={vsUnfilled} alt='vs code'></img>
+                <button onClick={
+                  () => changeIcon(unfilledIconSet,filledIconSet,3)
+                }>
+                  <img className='info-icon' src={vsUnfilled} alt='vs code'></img>
                 </button>
               </div>
               <div className='info-container' id='info-container-right'>
@@ -99,6 +114,11 @@ function Project() {
                   <img src={infoUnfilled} alt='info'></img>
                 </button>
               </div>
+            </div>
+            <div id='info-expand-container'>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </span>
             </div>
           </div>
         </div>
