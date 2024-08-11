@@ -8,7 +8,7 @@ import photoshopFilled from './img/filled/icons8-photoshop.png';
 import vsFilled from './img/filled/icons8-visual-studio.png';
 import premiereproFilled from './img/filled/icons8-adobe-premiere-pro.png';
 import arrowFilled from './img/filled/icons8-arrow.png';
-
+import infoFilled from './img/filled/icons8-info.png';
 
 /* ICONS UNFILLED */
 import blenderUnfilled from './img/unfilled/icons8-blender.png';
@@ -16,6 +16,7 @@ import photoshopUnfilled from './img/unfilled/icons8-photoshop.png';
 import vsUnfilled from './img/unfilled/icons8-visual-studio.png';
 import premiereproUnfilled from './img/unfilled/icons8-adobe-premiere-pro.png';
 import arrowUnfilled from './img/unfilled/icons8-arrow.png';
+import infoUnfilled from './img/unfilled/icons8-info.png';
 
 /* GALLERY */
 import terminus from './img/gallery/Terminus.png';
@@ -78,35 +79,24 @@ function Project() {
             <div id='viewport-container'>
                 <Viewport />
             </div>
-            <div id='viewport-section-cards'>
-              <div className='viewport-card'>
+            <div id='viewport-section-info'>
+              <div className='info-container' id='info-container-left'>
                 <button>
-                  <div>
-                    <img className='icon-unselected' src={blenderUnfilled} alt='blender'></img>
-                  </div>
-                  <div>
-                    <img className='arrow-unselected' src={arrowUnfilled} alt='unselected'></img>
-                  </div>
+                  <img src={blenderUnfilled} alt='blender'></img>
+                </button>
+                <button>
+                  <img src={photoshopUnfilled} alt='photoshop'></img>
+                </button>
+                <button>
+                  <img src={premiereproUnfilled} alt='premiere pro'></img>
+                </button>
+                <button>
+                  <img src={vsUnfilled} alt='vs code'></img>
                 </button>
               </div>
-              <div className='viewport-card'>
+              <div className='info-container' id='info-container-right'>
                 <button>
-                  <div>
-                    <img className='icon-unselected' src={vsUnfilled} alt='VS Code'></img>
-                  </div>
-                  <div>
-                    <img className='arrow-unselected' src={arrowUnfilled} alt='unselected'></img>
-                  </div>
-                </button>
-              </div>  
-              <div className='viewport-card'>
-                <button>
-                  <div>
-                    <img className='icon-unselected' src={photoshopUnfilled} alt='Photoshop'></img>
-                  </div>
-                  <div>
-                    <img className='arrow-unselected' src={arrowUnfilled} alt='unselected'></img>
-                  </div>
+                  <img src={infoUnfilled} alt='info'></img>
                 </button>
               </div>
             </div>

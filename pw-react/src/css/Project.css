@@ -10,7 +10,7 @@
 
 #project-container-sub{
     width: 85%;
-    height: 100%;
+    height: auto;
 }
 
 #viewport-container, #viewport-section-cards{
@@ -30,41 +30,47 @@
     height: 65vh;
 }
 
-#viewport-section-cards{
+#viewport-section-info{
+    margin-left: 6.3vw;
     width: 85%;
-    height: auto;
-}
-
-.viewport-card{
-    position: relative;
-    z-index: 1;
-    width: 6%;
-    height: 15vh;
-    margin-right: 1vw;
-    border-radius: 0.4vh;
-    display: inline-block;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 3px;
+    height: 10vh;
+    border-radius: 0.3vh;
     background-color: #FDFFFF;
-}
-
-.viewport-card button{
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    display: grid;
-    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.icon-unselected{
+#viewport-section-info button{
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: 0;
+}
+
+#viewport-section-info img{
+    width: 2.5vw;
     filter: invert(24%) sepia(48%) saturate(2736%) hue-rotate(338deg) brightness(93%) contrast(103%);
+}
+
+.info-container{
     width: 50%;
-    height: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.arrow-unselected{
-    filter: invert(24%) sepia(48%) saturate(2736%) hue-rotate(338deg) brightness(93%) contrast(103%);
-    width: 30%;
-    height: auto;
+#info-container-left{
+    padding-left: 1vw;
+    justify-content: left;
+}
+
+#info-container-left button{
+    margin-right: 2vw;
+}
+
+#info-container-right{
+    padding-right: 1vw;
+    justify-content: right;
 }
