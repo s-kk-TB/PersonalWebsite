@@ -85,6 +85,7 @@
     background-color: #FDFFFF;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 3px;
     padding: 2%;
+    display: none;
 }
 
 #info-expand-container span{
