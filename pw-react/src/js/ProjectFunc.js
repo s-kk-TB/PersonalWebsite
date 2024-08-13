@@ -5,9 +5,16 @@ export default function changeIcon(unfilledIconSet,filledIconSet,x,infoText){
     const infoIcons = document.getElementsByClassName('info-icon');
     
     infoContainer.style.display = 'block';
-    while(count<4){
+
+    while(count<5){
         infoIcons[count].src = unfilledIconSet[count];
         count++;
+    }
+
+    if(x === 4){
+        infoTextContainer.style.justifyContent = 'right';
+    }else{
+        infoTextContainer.style.justifyContent = 'left';
     }
     infoTextContainer.innerHTML = infoText;
     infoIcons[x].src = filledIconSet[x];

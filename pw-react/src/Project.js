@@ -35,8 +35,8 @@ import Viewport from './components/Viewport';
 import changeIcon from './js/ProjectFunc';
 
 /* ICON ARRAYS */
-const unfilledIconSet = [blenderUnfilled,photoshopUnfilled,premiereproUnfilled,vsUnfilled];
-const filledIconSet = [blenderFilled,photoshopFilled,premiereproFilled,vsFilled];
+const unfilledIconSet = [blenderUnfilled,photoshopUnfilled,premiereproUnfilled,vsUnfilled,infoUnfilled];
+const filledIconSet = [blenderFilled,photoshopFilled,premiereproFilled,vsFilled,infoFilled];
 
 function Project() {
   return (
@@ -110,8 +110,10 @@ function Project() {
                 </button>
               </div>
               <div className='info-container' id='info-container-right'>
-                <button>
-                  <img src={infoUnfilled} alt='info'></img>
+                <button onClick={
+                  () => changeIcon(unfilledIconSet,filledIconSet,4, 'Bye from the info panel')
+                }>
+                  <img className='info-icon' src={infoUnfilled} alt='info'></img>
                 </button>
               </div>
             </div>
