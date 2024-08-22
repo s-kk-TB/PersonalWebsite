@@ -6,9 +6,6 @@ import terminus from './img/gallery/Terminus.png';
 import arcana from './img/gallery/arcana.png';
 import serendipity from './img/gallery/Serendipity.png';
 
-/* OTHER */
-import tbProfile from './img/other/tb_profile.jpeg';
-
 /* COMPONENTS */
 import Header from './components/Header';
 import Navbar from './components/Navbar';
@@ -18,8 +15,6 @@ import getNavBttnStyle from './js/projectsPage';
 
 /* FILLED ICONS */
 import modsFilled from './img/filled/icons8-tools.png';
-import projectFilled from './img/filled/icons8-drawing.png';
-import galleryFilled from './img/filled/icons8-gallery.png';
 
 /* UNFILLED ICONS */
 import modsUnfilled from './img/unfilled/icons8-tools.png';

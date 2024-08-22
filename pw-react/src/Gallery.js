@@ -5,8 +5,6 @@ import './css/Footer.css';
 import getNavBttnStyle from './js/projectsPage';
 
 /* FILLED ICONS */
-import modsFilled from './img/filled/icons8-tools.png';
-import projectFilled from './img/filled/icons8-drawing.png';
 import galleryFilled from './img/filled/icons8-gallery.png';
 
 /* UNFILLED ICONS */
@@ -23,9 +21,6 @@ import fedora from './img/gallery/BetteFedora.jpg';
 import blackhole from './img/gallery/black hole.png';
 import theatremasks from './img/gallery/theatre masks.png';
 
-/* OTHER */
-import tbProfile from './img/other/tb_profile.jpeg';
-
 /* COMPONENTS */
 import Header from './components/Header';
 import Navbar from './components/Navbar';
@@ -33,7 +28,6 @@ import Footer from './components/Footer';
 import GalleryImgSlide from './components/GalleryImgSlide';
 
 /* FUNCTIONALITY */
-import { CloseImgHighlight } from './js/GalleryFunctionality';
 import { useEffect } from 'react';
 
 let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
