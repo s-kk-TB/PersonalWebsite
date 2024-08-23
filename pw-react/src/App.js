@@ -28,6 +28,10 @@ import galleryUnfilled from './img/unfilled/icons8-gallery.png';
 import terminus from './img/gallery/Terminus.png';
 import arcana from './img/gallery/arcana.png';
 import serendipity from './img/gallery/Serendipity.png';
+import akkan from './img/gallery/Akkans corruption.png';
+import fedora from './img/gallery/BetteFedora.jpg';
+import blackhole from './img/gallery/black hole.png';
+import theatremasks from './img/gallery/theatre masks.png';
 
 /* OTHER */
 import theatreMasks from './img/other/theatre masks.png';
@@ -101,6 +105,42 @@ function App() {
           vsImg={vsUnfilled}
           premiereproImg={premiereproUnfilled}
           previewImg={serendipity}
+        />
+        <ProjectCardRight 
+          projectTitle='Akkan'
+          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
+          blenderImg={blenderFilled}
+          photoshopImg={photoshopFilled}
+          vsImg={vsUnFilled}
+          premiereproImg={premiereproUnfilled}
+          previewImg={akkan}
+        />
+        <ProjectCardLeft 
+          projectTitle='Fedora'
+          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
+          blenderImg={blenderFilled}
+          photoshopImg={photoshopFilled}
+          vsImg={vsUnFilled}
+          premiereproImg={premiereproUnfilled}
+          previewImg={fedora}
+        />
+        <ProjectCardRight 
+          projectTitle='Black hole'
+          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
+          blenderImg={blenderFilled}
+          photoshopImg={photoshopUnfilled}
+          vsImg={vsUnFilled}
+          premiereproImg={premiereproUnfilled}
+          previewImg={blackhole}
+        />
+        <ProjectCardLeft 
+          projectTitle='Theatre mask'
+          projectInfo='DEBUF FOR INFO TEXT PLEASE REMOVE LATER'
+          blenderImg={blenderFilled}
+          photoshopImg={photoshopFilled}
+          vsImg={vsUnFilled}
+          premiereproImg={premiereproUnfilled}
+          previewImg={theatreMasks}
         />
       </div>
       <Footer />
