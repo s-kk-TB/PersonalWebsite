@@ -6,6 +6,6 @@ export default function GalleryImgSlide({ GalleryImg, AltText }){
             () => DisplayImgHighlight(GalleryImg)
           }>
             <img src={GalleryImg} alt={AltText}></img>
-          </button>
+        </button>
     );
 }

@@ -29,6 +29,7 @@ import GalleryImgSlide from './components/GalleryImgSlide';
 
 /* FUNCTIONALITY */
 import { useEffect } from 'react';
+import { CloseImgHighlight } from './js/GalleryFunctionality';
 
 let navImgArr = [modsUnfilled,projectUnfilled,galleryUnfilled];
 
@@ -38,6 +39,12 @@ function Gallery() {
   })
   return (
     <div id="main-page">
+      <div id='gallery-img-highlight'>
+        <button onClick={
+          () => CloseImgHighlight()
+        }>Close</button>
+        <img id='gallery-img'></img>
+      </div>
       <Header />
       <div id='top-section' className='debug-section'>
         <div id='top-title-section'>
