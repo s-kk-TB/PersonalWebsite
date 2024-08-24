@@ -161,6 +161,7 @@
 }
 
 .project-card-info-right{
+    border-left: 0.1vh solid #010109;
     justify-content: end;
     padding-right: 1.4vw;
     right: 0;
