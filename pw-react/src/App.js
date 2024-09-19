@@ -88,60 +88,6 @@ function App() {
           premiereproImg={premiereproUnfilled}
           previewImg={theatreMasks}
         />  
-        <ProjectCardRight
-          projectTitle='Arcana'
-          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderImg={blenderFilled}
-          photoshopImg={photoshopUnfilled}
-          vsImg={vsUnfilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={arcana}
-        /> 
-        <ProjectCardLeft
-          projectTitle='Serendipity'
-          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderImg={blenderUnfilled}
-          photoshopImg={photoshopUnfilled}
-          vsImg={vsUnfilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={serendipity}
-        />
-        <ProjectCardRight 
-          projectTitle='Akkan'
-          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderImg={blenderFilled}
-          photoshopImg={photoshopFilled}
-          vsImg={vsUnFilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={akkan}
-        />
-        <ProjectCardLeft 
-          projectTitle='Fedora'
-          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderImg={blenderFilled}
-          photoshopImg={photoshopFilled}
-          vsImg={vsUnFilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={fedora}
-        />
-        <ProjectCardRight 
-          projectTitle='Black hole'
-          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderImg={blenderFilled}
-          photoshopImg={photoshopUnfilled}
-          vsImg={vsUnFilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={blackhole}
-        />
-        <ProjectCardLeft 
-          projectTitle='Theatre mask'
-          projectInfo='DEBUF FOR INFO TEXT PLEASE REMOVE LATER'
-          blenderImg={blenderFilled}
-          photoshopImg={photoshopFilled}
-          vsImg={vsUnFilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={theatreMasks}
-        />
       </div>
       <Footer />
     </div>

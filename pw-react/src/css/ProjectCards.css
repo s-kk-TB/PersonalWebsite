@@ -115,7 +115,7 @@
 /* PROJECT CARD LEFT */
 .bottom-project-card-left{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
-    left: -1vw;
+    left: 1vw;
 }
 
 .project-card-name-left{
@@ -141,33 +141,4 @@
 
 .project-card-bttn-left{
     right: 0;
-}
-
-/* PROJECT CARD RIGHT */
-.bottom-project-card-right{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
-    left: 25.5vw;
-}
-
-.project-card-name-right{
-    justify-content: end;
-    padding-right: 1.4vw;
-    right: 0;
-}
-
-.project-card-software-right{
-    padding-right: 1.4vw;
-    right: 0;
-}
-
-.project-card-info-right{
-    border-left: 0.1vh solid #010109;
-    justify-content: end;
-    padding-right: 1.4vw;
-    right: 0;
-}
-
-.project-card-img-right img{
-    width: auto;
-    height: 100%;
 }
