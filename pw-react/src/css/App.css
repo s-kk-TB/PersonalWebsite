@@ -223,3 +223,18 @@ button:hover, select:hover{
   align-items: center;
   text-align: center;
 }
+
+#bottom-section-projects-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-cards-container{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

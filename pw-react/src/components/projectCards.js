@@ -2,7 +2,11 @@
 export default function ProjectCard({projectTitle,blenderImg,photoshopImg,vsImg,premiereproImg,previewImg}){
     return(
         <div className='bottom-project-card'>
-            <div className="project-card-title">{projectTitle}</div>
+            <div className="project-card-title">
+                <div>
+                    {projectTitle}
+                </div>
+            </div>
             <div className="project-preview-img">
                 <img src={previewImg} alt="preview"></img>
             </div>

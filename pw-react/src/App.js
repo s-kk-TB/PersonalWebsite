@@ -78,14 +78,42 @@ function App() {
             </div>
           </div>
         </div>
-        <ProjectCard 
-          projectTitle='THEATRE MASKS'
-          blenderImg={blenderFilled}
-          photoshopImg={photoshopFilled}
-          vsImg={vsUnfilled}
-          premiereproImg={premiereproUnfilled}
-          previewImg={theatreMasks}
-        />  
+        <div id='bottom-section-projects-container'>
+          <div id='project-cards-container'>
+            <ProjectCard 
+              projectTitle='THEATRE MASKS'
+              blenderImg={blenderFilled}
+              photoshopImg={photoshopFilled}
+              vsImg={vsUnfilled}
+              premiereproImg={premiereproUnfilled}
+              previewImg={theatreMasks}
+            />
+            <ProjectCard 
+              projectTitle='TERMINUS'
+              blenderImg={blenderFilled}
+              photoshopImg={photoshopUnfilled}
+              vsImg={vsUnFilled}
+              premiereproImg={premiereproFilled}
+              previewImg={terminus}
+            />
+            <ProjectCard 
+              projectTitle='BETTE FEDORA'
+              blenderImg={blenderFilled}
+              photoshopImg={photoshopUnfilled}
+              vsImg={vsUnFilled}
+              premiereproImg={premiereproFilled}
+              previewImg={fedora}
+            />
+            {/* <ProjectCard 
+              projectTitle='ARCANA'
+              blenderImg={blenderUnfilled}
+              photoshopImg={photoshopFilled}
+              vsImg={vsUnFilled}
+              premiereproImg={premiereproUnfilled}
+              previewImg={arcana}
+            /> */}
+          </div>
+        </div>  
       </div>
       <Footer />
     </div>
