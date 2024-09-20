@@ -39,8 +39,7 @@ import theatreMasks from './img/other/theatre masks.png';
 /* COMPONENTS */
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import ProjectCardLeft from './components/ProjectCards';
-import { ProjectCardRight } from './components/ProjectCards';
+import ProjectCard from './components/ProjectCards';
 import Footer from './components/Footer';
 
 import { useEffect } from 'react';
@@ -79,9 +78,8 @@ function App() {
             </div>
           </div>
         </div>
-        <ProjectCardLeft 
+        <ProjectCard 
           projectTitle='THEATRE MASKS'
-          projectInfo='DEBUG FOR INFO TEXT PLEASE REMOVE LATER'
           blenderImg={blenderFilled}
           photoshopImg={photoshopFilled}
           vsImg={vsUnfilled}

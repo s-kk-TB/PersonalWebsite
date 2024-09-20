@@ -1,144 +1,95 @@
-/* PROJECT CARDS BOTH */
-.bottom-project-card-left, .bottom-project-card-right{
+@font-face {
+    font-family: abril-fatface;
+    src: url('./fonts/abril-fatface/AbrilFatface-Regular.ttf');
+}
+
+@font-face {
+    font-family: source-sans-pro-black;
+    src: url('./fonts/source-sans-pro/SourceSansPro-Black.ttf');
+  }
+
+.bottom-project-card{
     position: relative;
-    width: 75vw;
-    height: 60vh;
+    width: 30vw;
+    height: 85vh;
     background-color: #FDFFFF;
-    border: 0.25vh solid #010109;
-    border-radius: 0.35vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    border: 0.25vh solid black;
+    border-radius: 0.5vh;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 1px 3px;
 }
 
-.project-card-name-left, .project-card-name-right{
-    width: 50%;
-    height: 20%;
-    background-color: #FDFFFF;
-    border: 0.1vh solid #010109;
-    border-radius: 0.3vh;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
+.project-card-title{
+    width: 100%;
+    height: 10%;
+    border-bottom: 0.1vh solid black;
+    border-radius: 0.25vh;
     font-family: abril-fatface;
-    font-size: 4vh;
-    display: flex; 
-    align-items: center; 
-    position: absolute;
-    z-index: 3;  
+    font-size: 5vh;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 1px 3px;
 }
 
-.project-card-software-left, .project-card-software-right{
-    position: absolute;
-    z-index: 2;
-    width: 50%;
-    height: 20%;
-    background-color: #FDFFFF;
-    border: 0.1vh solid #010109;
-    border-radius: 0.3vh;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 3px; */
-    font-family: abril-fatface;
-    font-size: 4vh;
+.project-preview-img{
+    width: 100%;
+    height: 65%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    top: 10vh;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
 }
 
-.project-card-software-left img, .project-card-software-right img{
-    width: 6%;
+.project-preview-img img{
+    width: 80%;
     height: auto;
-    margin-top: 2vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
+}
+
+.project-card-info{
+    width: 100%;
+    height: auto;
+}
+
+.project-card-software{
+    width: 100%;
+    height: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card-software img{
+    width: 12%;
+    height: auto;
+    margin-left: 1.65vw;
+    margin-right: 1.65vw;
     filter: invert(22%) sepia(54%) saturate(3048%) hue-rotate(341deg) brightness(92%) contrast(100%);
 }
 
-.project-card-info-left, .project-card-info-right{
-    position: absolute;
-    z-index: 1;
-    width: 50%;
-    height: 66.6%;
-    background-color: #FDFFFF;
-    border-right: 0.1vh solid #010109;
-    border-radius: 0.3vh;
-    font-size: 2vh;
+.project-card-bttn{
+    width: 100%;
+    height: 12.5%;
     display: flex;
-    align-items: center;
-    top: 20vh;
-}
-
-.project-card-img-left, .project-card-img-right{
-    position: absolute;
-    z-index: 1;
-    width: 48%;
-    height: 75%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
-    top: 1vh;
-}
-
-.project-card-bttn-left, .project-card-bttn-right{
-    position: absolute;
-    z-index: 0;
-    width: 48%;
-    height: 22%;
-    background-color: transparent;
-    font-family: abril-fatface;
-    font-size: 4vh;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    top: 46vh;
 }
 
-.project-card-bttn-left button, .project-card-bttn-right button{
-    width: 95%;
-    height: 60%;
-    background-color: #FDFFFF;
-    border: 0.25vh solid #449341;
+.project-card-bttn button{
+    width: 80%;
+    height: 7.5vh;
     font-family: source-sans-pro-black;
     color: #449341;
     font-size: 3vh;
-    border-radius: 0.3vh;
+    background-color: transparent;
+    border: 0.15vh solid #449341;
+    border-radius: 0.2vh;
 }
 
-.project-card-bttn-left button:hover, .project-card-bttn-right button:hover{
+.project-card-bttn button:hover{
     background-color: #449341;
-    border: 0.25vh solid #449341;
-    font-family: source-sans-pro-black;
     color: #FDFFFF;
-    font-size: 3vh;
-    transition: 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
-/* PROJECT CARD LEFT */
-.bottom-project-card-left{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
-    left: 1vw;
-}
-
-.project-card-name-left{
-    padding-left: 1.4vw;
-}
-
-.project-card-software-left{
-    padding-left: 1.4vw;
-}
-
-.project-card-info-left{
-    padding-left: 1.4vw;
-}
-
-.project-card-img-left{
-    right: 0;
-}
-
-.project-card-img-left img{
-    width: auto;
-    height: 100%;
-}
-
-.project-card-bttn-left{
-    right: 0;
+.project-card-software, .project-card-bttn{
+    padding-top: 2vh;
 }

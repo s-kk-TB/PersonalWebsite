@@ -1,24 +1,25 @@
 
-export default function ProjectCardLeft({projectTitle,blenderImg,photoshopImg,vsImg,premiereproImg,projectInfo,previewImg}){
+export default function ProjectCard({projectTitle,blenderImg,photoshopImg,vsImg,premiereproImg,previewImg}){
     return(
-        <div className='bottom-project-card-left'>
-            <div className='project-card-name-left'>{projectTitle}</div>
-            <div className='project-card-software-left'>
-                <img src={blenderImg} alt='Blender'></img>
-                <img src={photoshopImg} alt='Photoshop'></img>
-                <img src={vsImg} alt='Visual studio code'></img>
-                <img src={premiereproImg} alt='Premiere pro'></img>
+        <div className='bottom-project-card'>
+            <div className="project-card-title">{projectTitle}</div>
+            <div className="project-preview-img">
+                <img src={previewImg} alt="preview"></img>
             </div>
-            <div className='project-card-info-left'>{projectInfo}</div>
-            <div className='project-card-img-left'>
-                <img src={previewImg} alt='preview'></img>
-            </div>
-            <div className='project-card-bttn-left'>
-                <button onClick={
-                    () => window.location.href = "/Project"
-                }>
-                    Learn More
-                </button>
+            <div className="project-card-info">
+                <div className="project-card-software">
+                    <img src={blenderImg} alt="blender"></img>
+                    <img src={photoshopImg} alt="photoshop"></img>
+                    <img src={vsImg} alt="vs code"></img>
+                    <img src={premiereproImg} alt="premiere pro"></img>
+                </div>
+                <div className="project-card-bttn">
+                    <button onClick={
+                        () => window.location.href = "/Project"
+                    }>
+                        Learn More
+                    </button>
+                </div>
             </div>
         </div>
     )
